@@ -1,4 +1,18 @@
-## Laravel PHP Framework
+## IFE暑期课程作业 - WEB-RIA扬帆班, 图片管理器
+
+实现了一个图片管理器
+
+## 特征
+
+前端: 简单的滤镜, 图片管理等等等。
+
+后端: Laravel PHP Framework
+
+## Demo
+
+[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](http://lar.eddie32.tk)
+
+## 关于 Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
 [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
