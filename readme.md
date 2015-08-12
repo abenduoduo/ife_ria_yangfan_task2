@@ -12,6 +12,16 @@
 
 [Demo地址](http://lar.eddie32.tk)
 
+## 安装
+
+-LNMP
+-配置NGINX
+-PHP Composer
+-生成空白项目
+-生成Token
+-Migration数据库
+-拷贝其他文件
+
 ## 关于 Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
