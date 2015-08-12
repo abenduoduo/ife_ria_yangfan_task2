@@ -1,0 +1,41 @@
+@extends('core')
+
+@section('content')
+<section class="container">
+    <a href="{{url('picture/manager')}}" role="btn" class="btn btn-primary pull-right">图片管理</a>
+    <a href="{{url('picture/create')}}" role="btn" class="btn btn-primary pull-right">上传新图片</a>
+    <table class="table table-hover" style="display:none">
+        <tr>
+        <td>图片id</td>
+        <td>图片名称</td>
+        <td>图片预览图</td>
+        <td>图片尺寸</td>
+        <td>图片Tag</td>
+        <td>编辑功能</td>
+        <td>删除功能</td>
+        </tr>
+        @foreach($query as $var)
+        <tr>
+           <td>{{$var->id}}</td>
+           <td style="width:200px">{{$var->title}}</td>
+           <td><img style="width: 140px;" class="img-thumbnail img-responsive" alt="Responsive image" src="{{
+            url('data/'.$var->usr.'/upload/'.$var->title) }}"/></td>
+           <td>{{$var->dimension}}</td>
+           <td>{{$var->tag}}</td>
+           <!--<td>{{$var->cat}}</td>-->
+           <!--<td>{{$var->usr}}</td>-->
+           <td><a href="{{ url('picture/'.$var->id.'/edit') }}" role="button" class="btn btn-warning">编辑</a></td>
+           <td  style="display:none;">
+               <form action="{{url('picture/'.$var->id)}}" method="post">
+                   <input type="hidden" name="_token" value="{{csrf_token()}}">
+                   <input type="hidden" name="_method" value="delete">
+                   <input type="submit" role="btn" class="btn btn-danger" value="删除">
+                </form>       
+               
+               
+               </td>
+        </tr>
+        @endforeach
+        </table>
+        </section>
+@stop
