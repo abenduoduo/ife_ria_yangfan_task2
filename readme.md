@@ -14,13 +14,13 @@
 
 ## 安装
 
--LNMP
--配置NGINX
--PHP Composer
--生成空白项目
--生成Token
--Migration数据库
--拷贝其他文件
+- LNMP
+- 配置NGINX
+- PHP Composer
+- 生成空白项目
+- 生成Token
+- Migration数据库
+- 拷贝其他文件
 
 ## 关于 Laravel PHP Framework
 
